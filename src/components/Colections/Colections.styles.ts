@@ -56,7 +56,7 @@ export const ImageArea = styled("div")(({theme}) =>({
     },
   },
   [theme.breakpoints.down(890)]: {
-    width:"620px",
+    width:"580px",
     marginBottom:"20px",
     button:{
       display:"none",
@@ -76,18 +76,19 @@ export const ImageArea = styled("div")(({theme}) =>({
   }, 
   [theme.breakpoints.down(600)]: {
     position:"relative",
-    width:"108%!important",
-    left:"20px",
+    width:"calc(100vw + 20px)!important",
+    left:"-20px",
     button:{
       display:"none",
     },
     ul:{
       width:"100%!important",
       li:{
+        overflowY:"hidden",
         img:{
           alignItems:"center",
-          height:"300px !important",
-          width:"600px !important",
+          height:"340px !important",
+          width:"640px !important",
         },
       },
     },

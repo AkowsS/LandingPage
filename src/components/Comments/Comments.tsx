@@ -4,7 +4,7 @@ import { Container, CardArea, CardMail, CardUser, CardAreaSecondary, CardAreaDiv
 export const Comments: React.FC = () => {
 
   return (
-    <Container>
+    <Container id="comments">
       <h1>Comentários</h1>
       <CardAreaDiv>
         <CardAreaSecondary>

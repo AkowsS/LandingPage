@@ -5,7 +5,7 @@ import { imgPage1 } from "../../assets";
 export const WelcomePage : React.FC = () => {
 
   return (
-    <Container>
+    <Container id="home">
       <TextArea>
         <div>
           <h1>Texto impactante!!!</h1>

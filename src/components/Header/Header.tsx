@@ -14,28 +14,19 @@ export const Header: React.FC = () => {
   return (
     <Container>
       <Logo><p>Titulo</p></Logo>
-      
-
-
-
       <ResponDiv>
         <img src={menu} alt="options" />
         <div>
-            <List><p>Início</p></List>
-            <List><p>Coleções</p></List>
-            <List><p>Comentários</p></List>
+            <List><a href="#home"><p>Início</p></a></List>
+            <List><a href="#colections"><p>Coleções</p></a></List>
+            <List><a href="#comments"><p>Comentários</p></a></List>
             <List><p>Lista</p></List>
         </div>
       </ResponDiv>
-
-
-
       <DivItems>
-  {/* jn//////////////////////////////////////////////////////////on */}
-        <Items>Início</Items>
-        <Items>Coleções</Items>
-        <Items>Comentários</Items>
-
+        <Items><a href="#home">Início</a></Items>
+        <Items><a href="#colections">Coleções</a></Items>
+        <Items><a href="#comments">Comentários</a></Items>
         <DivMenu>
           <Items>Lista</Items>
           <div>

@@ -1,6 +1,8 @@
 import { styled } from "@mui/system";
 
 export const Container = styled("div")({
+  position:"fixed",
+  zIndex:"1000",
   width: "100%",
   height: "55px",
   backgroundColor: "#D9D9D9",
@@ -8,9 +10,10 @@ export const Container = styled("div")({
   alignItems: "center",
   justifyContent:"space-between",
   PaddingRight: "60px",
-  "& .css-6hp17o-MuiList-root-MuiMenu-list":{
-    height:"1000px",
-   },
+  a:{
+    textDecoration:"none",
+    color:"#000000",
+  },
 });
 
 export const Logo = styled("div")({
@@ -73,7 +76,7 @@ export const DivItems = styled("div")(({theme}) => ({
 }));
 
 export const Items = styled("p")({
-  color: "#000000",
+  color: "#000000!important",
   cursor: "pointer",
   marginRight: "34px",
   height: "24px",

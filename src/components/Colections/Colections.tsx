@@ -3,7 +3,6 @@ import { Container, ImageArea, DivButtons } from "./Colections.styles";
 import {paisagem, paisagem2, paisagem3, nextArrow, backArrow} from "../../assets";
 
 export const Colections: React.FC = () => {
-  // const ListImages = [paisagem, paisagem2, paisagem3];
   const[slide, setSlide] = React.useState(0);
   const[paused, setPaused] = useState(false);
 
@@ -41,7 +40,7 @@ export const Colections: React.FC = () => {
   });
 
   return (
-    <Container>
+    <Container id="colections">
       <h1>Coleções</h1>
       <ImageArea>
       <button onClick={onReturnButtonClick}><img src={backArrow} alt="return" /></button>
@@ -57,9 +56,9 @@ export const Colections: React.FC = () => {
       </ImageArea>
       <DivButtons>
         <div>
-          <button onClick={()=>setSlide(0)} style={slide == 0?{background:"#454545"}:{background:"#D9D9D9"}}></button>
-          <button onClick={()=>setSlide(1)} style={slide == 1?{background:"#454545"}:{background:"#D9D9D9"}}></button>
-          <button onClick={()=>setSlide(2)} style={slide == 2?{background:"#454545"}:{background:"#D9D9D9"}}></button>
+          <button onClick={()=>setSlide(0)} style={slide == 0?{background:"#454545"}:{background:"#D9D9D9", cursor:"pointer"}}></button>
+          <button onClick={()=>setSlide(1)} style={slide == 1?{background:"#454545"}:{background:"#D9D9D9", cursor:"pointer"}}></button>
+          <button onClick={()=>setSlide(2)} style={slide == 2?{background:"#454545"}:{background:"#D9D9D9", cursor:"pointer"}}></button>
         </div>
       </DivButtons>
     </Container>
